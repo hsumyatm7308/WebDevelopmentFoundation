@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Clock</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <h3 id="display">1:18:20 PM Friday</h3>
+
+    <script>
+
+        let getdisplay = document.getElementById("display");
+        const day = ["Sunday", "Monday", "Tuesday", "Wenesday", "Thursday", "Friday"];
+
+
+        let getdate = new Date();
+
+
+
+        let gethour = getdate.getHours();
+        // console.log(gethour)
+
+        let getmin = getdate.getMinutes();
+        // console.log(getmin)
+
+        let getsec = getdate.getSeconds();
+        console.log(getsec);
+
+
+        let getday = getdate.getDate();
+
+        let getampm;
+
+        switch (gethour > 12) {
+            case true:
+                getampm = "PM"
+                gethour = gethour - 12;
+                break;
+            case false:
+                getampm = "AM";
+                break
+        }
+
+        let setclock = `${gethour}:${getmin}:${getsec} ${getampm} ${getday}`;
+        getdisplay.textContent = setclock;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Intro</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <h1>Welcome To Javascript</h1>
+
+    <p id="test">how to learn</p>
+
+    <hr>
+    <hr>
+    <img src="./img/shame.jpg" alt="" id="shame">
+
+    <br>
+    <button onclick="document.getElementById('shame').src='./img/amazing.jpg'">Amazing</button>
+    <button onclick="document.getElementById('shame').src='./img/bleh.jpg'">Bleh</button>
+    <button onclick="document.getElementById('shame').src='./img/shame.jpg'">Shame</button>
+
+
+    <hr>
+
+    <script>
+
+
+
+        //document.getElementById('test').textContent = "Save Myanmar";
+        //document.getElementById("test").innerText = "hello world";
+        document.getElementById('test').innerHTML = "hey buddy";
+
+
+
+        // "" ကုတ်ထဲမှ "" ဆိုမသိ
+        // '' ကုတ်ထဲမှာ '' ဆို မသိ
+        // ဒါကြောင့် သိစေချင်ရင / ကြေငြာစေချင်ရင် (\) ကို ရေး
+
+    </script>
+
+</body>
+
+</html>
+<!-- // console နဲ့ရေးတယ်ဆိုတာ ပါစေချင်လို့
+console.log("zaw zaw");
+console.log(`aung aung`);
+
+console.log(500);
+console.log("700");
+console.log('700');
+console.log(`700`);
+
+// ` ` and " " လုပ်ဆောင်ပုံခြင်းမတူ
+
+console.log("zaw zaw", 'kyaw kyaw', `500`, 700);
+
+console.log(10 + 20);
+console.log("10" + 20);
+
+console.log(true);
+console.log(false);
+console.log(true + 30);
+console.log(false + 40);
+console.log("zaw zaw" + true);
+console.log("aung aung" + false);
+
+// boolean true value = 1
+// boolean false value = 0
+
+// single line comment //
+// mutiline comment /**/
+
+// window.alert("Shit! here we go again");
+// window.alert("I'm afraid");
+// alert("I just wanna be alone");
+
+// variables (var/let/const)
+const saya = "tin htut aung";
+
+console.log("saya"); //result=saya
+
+console.log(saya)//result = tin htut aung
+
+//window.alert(sayar);
+
+console.log("our teacher name is saya");
+console.log('our teacher name is saya');
+console.log(`our teacher name is saya`);
+
+//concat
+console.log("our teacher name is " + saya);
+console.log("our teacher name is" + " " + saya);
+console.log("lour teacher name is " + saya);
+
+
+// backticks ရဲ့ အားသာချက်က variablesတွေကိုသိတာ သို့သော် ${} ထည့်ရေးရမယ်
+console.log(`saya`);
+console.log(`${saya}`);
+
+
+//${variable name} dosent work in ("" & '')
+console.log("${saya}");
+console.log('${saya}');
+
+
+console.log(`our teacher name is ${saya}`);
+
+var num1 = 1500;
+const num2 = 1000;
+
+console.log(num1 + num2);//result= 2500
+console.log('num1 + num2');//result num1+num2
+console.log('num1' + 'num2');//result= num1num2
+console.log("num1 +num2");//result = num1+num2
+console.log("num1" + "num2"); //result= num1num2
+
+console.log(`${num1 + num2}`); //result= 2500
+
+console.log(`${num1} + ${num2}`); //result = 1500+ 1000
+
+
+console.log(`${num1}+ ${num2}`); //result = 1500 + 1000
+
+console.log(`${num1}` + `${num2}`);// result = 1500100
+
+
+//Overwrite
+let num3 = 30;
+var num4 = 40;
+
+console.log("num3 value is = " + num3);
+console.log('num4 value is =' + num4);
+
+console.log(num3 + num4);
+
+// overwrite လုပ်ရင် let/ var / const ထည့်စရာမလို
+num3 = 50;
+console.log('num3 vale is =' + num3)
+let num5 = 50;
+console.log(num3 + num5);
+
+let num6 = 100;
+num6 = 300;
+console.log("num6 value is " + num6);
+
+
+var num7 = 200;
+num7 = 400
+console.log('num7 value is ' + num7);
+
+const num8 = 500;
+// num8 = 700;
+console.log('num8 value is ' + num8)
+
+// const dosen't overwrite
+
+// concatenate (+)
+
+const name1 = "maung maung";
+const name2 = "kyaw";
+
+console.log(name1 + " " + name2 + " " + "is my friend");
+
+let greeting = "hello";
+let city1 = "Mandalay";
+let city2 = "Yangon";
+
+console.log(greeting + " " + city1 + " and " + city2);
+
+console.log(`${greeting} ${city1} and ${city2}`);
+
+
+
+document.write(`${greeting} ${city1} and ${city2}`);
+document.write(`
+<hr />`);
+document.write(`${greeting} ${city1} and ${city2}`);
+document.write("hello myanmar");
+document.write("
+< hr /> ");
+
+// special escape characters
+console.log("Hay i am working" + 'do you see now');
+console.log("Hay i am working.", "do you see now");
+
+console.log('Hay i am working ' + 'do you see now');
+console.log('Hay i am working.', ' do you see now');
+
+console.log("Hay i'm working and i'm reading. do you see now");
+console.log('Hay i"m working and i"m reading. do you see now');
+
+let x = 'It\'s U Ba';
+let y = "He\'s my \"Uncle\".";
+
+document.write(${ x } ${ y }); -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is note
+
+<!-- number data type
+string (ajll;;)= " gh" or 'dggh'
+boolean data type = true false -->
+
+<!-- we can use variables 
+letter,number,_,$ 
+var firstname
+var FirstName
+var first_name
+var _firstname
+var $firstname
+var firstname1 
+
+we can't use
+var first name 
+var first-name 
+var @firstname -->
+
+
+
+
+<!-- css ကို အပေါ်မှာရေးတာက ဒေါင်းလုတ်ချရင် အရင်ဆုံးပေါ်လာအောင်
+ဉပမာ- ပုံတွေဆို cssက  ဒေါင်းလုတ်မချရသေးတော့ htmlအတိုင်းပေါ်နေလိိမ့်မယ် -->
+
+<!-- javascriptကို အောက်မှာရေးတာက action ပါလို့  layoutတွေက ပိုအရေးကြီးတာရယ် -->

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regular Function</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 300px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+
+        }
+
+        .form-control {
+            width: 100%;
+            display: block;
+            padding: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: darkblue;
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            margin-top: 10px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Show name = <span id="replacename">Text</span></h3>
+
+
+        <!-- <form action=""> -->
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" class="form-control" autofocus autocomplete="off">
+
+        <button type="button" class="btn" onclick="getdata()">Get Name</button>
+        <!-- </form> -->
+    </div>
+    <script>
+
+        // function alert(){
+        //     // code to be excuted
+        // }
+
+        // name(); invoke/function recall
+
+        // 1 Regualar Function
+        //     (i) manual function
+        //     (ii) parameter function
+        //         (a)single parameter function
+        //         (b) multi parameter function
+
+        //  2 Arrow Function
+        //     (i) manual function
+        //     (ii) parameter function
+        //         (a)single parameter function
+        //         (b) multi parameter function
+
+        // function ကို မဖန်တီးခင်ကတည်းက လှမ်းခေါ်လို့ရတယ် 
+        // 1 Manual Function
+
+        greet();
+        function greet() {
+            console.log('Hello Myanmar');
+            console.log("hello Thailand");
+            console.log('Hello Indonesia');
+        }
+
+        // num1 = 100;
+        // console.log(num1);
+
+
+        function hello() {
+            console.log("Hello Yangon");
+        }
+
+        hello();
+
+        function hello() {
+            console.log("Hello Mandalay");
+        }
+
+        hello();
+
+
+        // function ထဲ မှာ function တေါကို ပြန်အသုံးပြူလို့ရတယ် 
+        function funone() {
+            console.log("i am function one");
+        }
+
+        function funtwo() {
+            funone();
+            console.log("i am function two");
+            funone()
+        }
+
+        function funthree() {
+            funtwo();
+            console.log("i am function three");
+        }
+
+
+        funtwo();
+
+
+        //RETURN
+
+        function funfour() {
+            console.log(4);
+        }
+
+        function funfive() {
+            console.log(5);
+        }
+
+        function funsix() {
+            console.log(6);
+        }
+
+
+        function funsix() {
+            funfive();
+            funfour();
+
+        }
+
+        const num1 = funfour();
+        const num2 = funfive();
+
+        console.log(num1); //result - undefineds
+        console.log(num2); //result - undefined
+
+        const total = num1 + num2;
+        console.log(total); //result - NaN(not a number)
+
+        funsix();
+
+        // print out က လုံးဝ caculation လုပ်လို့မရ
+        // လုပ်ချင်ရင် return ပြန်တဲ့ function လိုတယ်
+
+        // function funseven() {
+        //     window.alert(7);
+        // }
+
+        // funseven();
+
+        function funseven() {
+            return 7;
+        }
+        //   value ကိုပဲ ပေးတာ (like variable)
+
+        console.log(funseven());
+
+
+        function funeight() {
+            var num = 8;
+            return num;
+        }
+
+        // funeight();
+        console.log(funeight());
+
+        function funnine() {
+            const num1 = funseven();
+            const num2 = funeight();
+
+            console.log(num1, num2);
+
+            var total = num1 + num2;
+            console.log(total);
+        }
+
+        funnine();
+
+
+        // functiion တစ်ခုမှာ return တစ်ခါပဲ ပြန်လို့ရတယ်
+
+        function test() {
+            const num1 = 100;
+            const num2 = 200;
+            const total = num1 + num2;
+
+            return total;
+            // return "hee hee";
+        }
+
+        console.log(test());
+
+        // 09422042242
+
+        //...............
+
+        // (ii) parameter function 
+        //   (a) single parameter function
+
+        function myfun1() {
+            console.log("hello yangon");
+        }
+
+        function myfun2() {
+            console.log("hello mandalya");
+        }
+
+        myfun1();
+        myfun2();
+
+        // parameter ပေးရမယ့်နေရာမှာ မပေးရင် Undefineထွက်လိမ့်မယ်
+        function myfun1(city) {
+            // console.log("Hello " + city);
+            console.log("hello" + " " + city);
+        }
+
+        // myfun1();
+        myfun1('Yangon');
+        myfun1("Mandalay");
+        myfun1(500);
+
+
+
+        //default parameter
+
+        function myfun2(country = "Indoniesia") {
+            console.log(`hello ${country}`);
+        }
+
+        myfun2("Thailad");
+        myfun2("Myanmar");
+        myfun2();
+
+        // undefined လို့ မထွက်စေချင်ရင် parameterမှာ value သတ်မှတ်ပေးရမယ်
+
+
+        // (b) Multi parameter function
+
+        function multifun1(x, y, z) {
+            console.log(`x value is ${x}`, `y value is ${y}`, `z value is ${z}`);
+        }
+
+        multifun1(10);
+        multifun1(20, 30, 40);
+
+
+        function multifun1(x = 1, y = 2, z = 3) {
+            console.log(`x value is ${x}`, `y value is ${y}`, `z value is ${z}`);
+        }
+
+        // multifun1();
+        // multifun1();
+
+
+
+
+        function multifun2(x = 1, y = 2, z = 3) {
+            // let result = x + y + z;
+            // return result;
+
+            return x + y + z;
+        }
+
+        multifun2();
+        // multifun1();
+
+        //......................................................
+
+
+        // 3 Constructor Function (Struig Structure)
+
+        const confunone = new Function("j", "k", "l", "return j+k+l");
+
+        console.log(confunone(10, 20, 30));
+
+        console.log(confunone("10", "20", "30")); //result = 102030
+
+        //.................................................
+
+        // 4. Nameless Function ();
+
+        let annfunone = function (name, color) {
+            console.log(`my name is ${name}. I lov ${color}.`);
+        }
+
+        annfunone("aung aung", "black");
+
+        //.................................................
+
+        // 5. Self Incoking function
+
+        (function () {
+            console.log("save Myanmar");
+        })();
+
+        (function (name) {
+            console.log(`My name is ${name}`);
+        })("tun tun");
+
+        //.................................................
+
+
+        function getdata() {
+            //console.log('hey i an working');
+
+
+            var getfirstname = document.getElementById('firstname').value;
+            var getlastname = document.getElementById('lastname').value;
+
+            // console.log(getfirstname);
+            // console.log(getlastname);
+
+            const getreplacename = document.getElementById('replacename');
+
+            getreplacename.innerText = `${getfirstname} ${getlastname}`;
+
+            //phyat sa yar ma lo pal auto delete
+            document.getElementById("firstname").value = "";
+            document.getElementById("lastname").value = "";
+
+            document.getElementById("firstname").focus();
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Method</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // array method
+
+        let arrcolors = ["red", "black", "orange", "tomato", "violet"];
+
+        console.log(arrcolors);
+        console.log(arrcolors.length);
+        console.log(arrcolors[3]);
+        console.log(arrcolors.indexOf("violet"));
+
+        // Charater array in js 
+
+        let myfriend = "Aung Kyaw Kyaw";
+
+        console.log(Array.isArray(arrcolors));//result =true
+        console.log(Array.isArray(myfriend)); //result = false
+
+        console.log(arrcolors);
+        console.log("Array to String by toSritng =" + arrcolors.toString());
+        console.log("Array to String by join =" + arrcolors.join("/"));
+
+        const n = ["red", "black", "green", "silver"];
+        console.log(n);
+
+        n[4] = "blue";
+        n[1] = "pink";
+
+        console.log(n);
+
+        //Add new value to array (addon to the end)
+        n.push("gold");
+        n.push("orange");
+        n.push("violer", "white");
+        console.log(n);
+
+
+        //add to front
+        n.unshift("tomato");
+        n.unshift("skyblue", "grey");
+        console.log(n);
+
+        //remove value & index (take off from front)
+        n.shift();
+        n.shift();
+        console.log(n);
+
+        //take off from end
+        n.pop();
+        n.pop();
+        console.log(n);
+
+        //remove only value
+        delete n[2];
+        console.log(n);
+        console.log(n.length);
+        console.log(n[2]);
+
+        //splice (index, length(space))
+        let q = n.splice(1, 5);
+        console.log(q);
+        console.log(q.length);
+
+        //Array Combines
+        const arr1 = ["aung aung", "kyaw kyaw"];
+        const arr2 = ["su su", "aye aye"];
+        const arr3 = [100, 200, 300, 400];
+
+        console.log(arr1 + arr2); //ရတယ် ဒါပေမယ့် strigကို ပြောင်းသွားတယ္
+        console.log(arr1.concat(arr2));
+        console.log(arr1.concat(arr1));
+        console.log(arr3.concat(arr2));
+
+        //array Sorting (a to z)
+        const arr4 = arr1.concat(arr2);
+        console.log(arr4);
+        console.log(arr4[3]);
+
+        //sort A to z (dosen't work in number)
+        console.log(arr4.sort());
+        //console.log(arr4[3]);
+
+        //Sort Z to A
+        console.log(arr4.reverse());
+
+        const arr5 = [100, 200, 300, 400, 500];
+
+        console.log(arr5)
+        // console.log(arr5.sort());
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scobe</title>
+</head>
+
+<body>
+
+    <script>
+
+
+
+
+
+
+
+
+
+        // Globle scope 
+        // Function 
+
+        var a = 1;
+        let b = 2;
+        const c = 3;
+
+        console.log('Globle scope =', a, b, c);
+
+        //function
+        // use 
+        function myfun1() {
+            return a + b + c;
+        }
+        console.log("Using Global Scope variable in function =", myfun1());
+
+        // overwrite
+        function myfunction() {
+            a = 10;
+            b = 20;
+            // c = 30;
+
+
+            console.log("overwrite / Global scobe", a, b, c); //result
+        }
+
+        myfunction();
+
+        console.log("Glovle scope", a, b, c);
+
+        //အပြင်မှာကြေငြာထားတဲ့ကောင်ကို function ထဲမှာ overwrite လုပ်ရင် အပြင်ထိ အဖြေထွက်လာတယ် 
+
+
+        var x = 1;
+        let y = 2;
+        // const = 3;
+
+
+        //   Declare 
+        function myfun3() {
+
+            // new declare 
+            var x = 4;
+            let y = 5;
+            // const = 6;
+
+            console.log("Globlw scope declare", x, y);
+            // (function မှာက delclare (4,5,6)ဆိုပြီးရတယ်)
+
+
+            var h = 100;
+            let i = 200;
+            // const j = 300;
+            console.log("h,i,j in function", h, i);
+        }
+
+        myfun3();
+
+        console.log("Global Scope =", x, y);
+
+        //  console.log("h,i,j in function ", h, i); // h, i, j is un defined
+
+        //......................................................................
+
+        var e = 1;
+        let f = 2;
+        const g = 3;
+
+        console.log("Globle scope =", e, f, g);
+
+        //use
+        if (true) {
+            console.log(" e,f,g If statemet/Global Scope varaible", e, f, g);
+        }
+
+        //overwrite
+        if (true) {
+            var e = 10;
+            let f = 20;
+            // const g = 30;
+
+            console.log("e,f, gIf statement/Global Scope varaible overwrite =", e, f, g); //result 10,20,3
+        }
+
+        var m = 1;
+        let n = 2;
+        const o = 3;
+
+        if (true) {
+            var m = 4;
+            let n = 5;
+            const o = 6;
+
+            console.log("If satement /Global scope declare", m, n, o); //result 4,5,6
+
+            // New Declare 
+            var q = 100;
+            let r = 200;
+            const s = 300;
+
+            console.log("q,r,s in statement", q, r, s); //result 100,200,300
+
+
+        }
+
+        console.log("Global Sscope", m, n, o); //result 4,2,3
+
+        console.log("q,r,s in statement", q); //resut q = 100 / r,s is not defined 
+
+
+        // var က globle scope ကနေလည်း ခေါ်သုံးလို့၇တယ် if statementမှာ  overwirte လည်း လုပ်လို့ရတယ် 
+
+        //.............................................................................
+
+
+        // loop မှာ statemet သုံးခုရှိတယ်  စမှတ် နှိုင်းယှဉ် ဆုံးမှတ်
+
+        //Loop
+        // နောက်တစ်ကြိမ်ဆို error တက်သွားပြီ const က overwrite လုပ်လို့မရလို့ 
+        // for (const x = 0; x < 10; x++) {
+        //     console.log(x);
+        // };
+
+        // for (let d = 0; d <= 10; d++) {
+        //     console.log(d);
+        // }
+        // console.log("d outside value", d);  //let  is error
+
+
+        for (var e = 0; e < 10; e++) {
+            console.log(e);
+        }
+
+        var num1 = 0;
+        let num2 = 0;
+        const num3 = 0;
+
+        for (num1; num1 < 10; num1++) {
+            console.log("loop var num1", num1);
+        }
+
+        console.log("Globle Scope", num1, num2, num3);
+
+
+
+        for (num2; num2 < 10; num2++) {
+            console.log("loop var num1", num2);
+        }
+
+        console.log("Globle Scope (le)", num1, num2, num3);
+
+
+        // for (num3; num3 < 10; num3++) {
+        //     console.log("loop var num1", num3);
+        // }
+
+        // console.log("Globle Scope(const)", num1, num2, num3);
+
+
+        //Declare
+        var num5 = 1;
+        let num6 = 2;
+        const num7 = 3;
+
+        for (num5 = 0; num5 < 10; num5++) {
+            console.log("for loop var num5", num5);
+        }
+
+        console.log("Global scope =", num5, num6, num7);
+
+
+        for (num6 = 0; num6 < 10; num6++) {
+            console.log("for loop var num6", num6);
+        }
+
+        console.log("Global scope =", num5, num6, num7);
+
+
+        // for (num7 = 0; num7 < 10; num7++) {
+        //     console.log("for loop var num6", num7);
+        // }
+
+        // console.log("Global scope =", num5, num6, num7);
+
+        //------------------------------------------------------------------------
+
+        var student = {
+            fullname: "aung tun tun",
+            age: 16,
+            phone: "12345"
+
+        }
+
+        console.log(student);
+        console.log(student.fullname, student.age, student.phone);
+
+        //new key create
+        student.city = "Mandalay";
+        console.log(student);
+        console.log(student.city);
+
+        // key overwrite 
+        student.age = 20;
+        console.log(student);
+        console.log(student.age);
+
+        // object renew 
+        student = {
+            fullname: "aung kyaw kyaw"
+        }
+
+        console.log(student);
+        console.log(student.fullname, student.age, student.phone);
+
+
+
+
+        let member = {
+            fullname: "jya mya",
+            age: 20,
+            phone: "12345"
+        }
+
+        console.log(member);
+        console.log(member.fullname, member.age, member.phone);
+
+        // new key creat 
+        member.city = "yangon";
+        console.log(member);
+        console.log(member.city);
+
+
+        //overwrite
+        member.age = 40;
+        console.log(member);
+        console.log(member.age);
+
+        //rewnew
+        member = {
+            fullname: "aye aye"
+        }
+        console.log(member);
+        console.log(member.fullname, member.age, member.phone);
+
+
+
+
+        const customer = {
+            fullname: "zayar kyaw",
+            age: 30,
+            phone: "123456"
+        };
+
+        console.log(customer);
+        console.log(customer.fullname, customer.age, customer.phone);
+
+        // new key creat 
+        customer.city = "Mandalay";
+        console.log(customer);
+        console.log(customer.city);
+
+        // overwrite
+        customer.phone = "3784949";
+        console.log(customer);
+        console.log(customer.phone);
+
+        // renew
+        customer.phone
+
+
+
+        //........................
+
+        // Aray 
+        var arrboys = ["aung aung", "maung maun", "kyaw kyaw"];
+        console.log(arrboys);
+
+        arrboys = ["naung naung", "zaw zaw", "naw naw"];
+        console.log(arrboys);
+
+        arrboys[0];
+        console.log(arrboys);
+
+        arrboys.push("thaung thuang");
+        console.log(arrboys);
+
+
+        let arrgirls = ["aung aung", "maung maun", "kyaw kyaw"];
+        console.log(arrgirls);
+
+        arrgirls = ["naung naung", "zaw zaw", "naw naw"];
+        console.log(arrgirls);
+
+        arrgirls[0];
+        console.log(arrgirls);
+
+        // push နဲ့ ထပ်တိုးတာ 
+        arrgirls.push("thaung thuang");
+        console.log(arrgirls);
+
+
+
+        const colors = ["black", "blue", "red"];
+        console.log(colors);
+
+        // colors = ["white", "grey", "green"];
+        // console.log(colors);
+
+        colors[0] = "green";
+        console.log(colors);
+
+
+        colors.push("gold");
+        console.log(colors);
+// const =  object and arry မှာ တစ်ခုလုံးကိုပဲ overwrite မရတာ
+
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+
+<!-- var က globle scope အထိ ဘယ်လိုဖြစ်ဖြစ် overwrite နိုင်  -->

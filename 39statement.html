@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Statement</title>
+</head>
+
+<body>
+
+    <script>
+        //Ternary operator (?) 
+        // c1 > C2
+
+        const x = 100;
+        const y = 200;
+
+        console.log(x > y ? "thi is true" : "this is false");
+        console.log(x < y ? "thi is true" : "this is false");
+
+
+        const num1 = "4";
+        const num2 = 4;
+
+        //check value
+        document.write("equal to (==) result =" + (num1 == num2 ? "true" : "false") + "<br/>");
+
+        //check value / data type
+        document.write("equal to (===) =" + (num1 === num2 ? "True" : "False") + "<br/>");
+
+        //check value
+        document.write("equal to (!==) result =" + (num1 != num2 ? "true" : "false") + "<br/>");
+
+        //check value / data type
+        document.write("equal to (!===) =" + (num1 !== num2 ? "True" : "False") + "<br/>");
+
+
+        // document.write("greater to (>) result =" + (num1 > num2 ? "true" ; "false") + "<br/>");
+        // document.write("greater or equal")
+
+
+
+        //if statement
+        //(condition){
+        //codes to be excute....;
+        //}
+
+        const id = 30;
+
+        // if (id == 50) {
+        //     console.log("correct");
+        // }
+
+        // ညီရင် အလုပ်လုပ်မယ် 
+
+        // Muliti line တွေ ရေးလို့ရလို့ print out ထုတ်တဲ့အခါ သုံးမယ် 
+
+
+
+        if (id == 50) {
+            console.log("correct");
+        } else {
+            console.log('incorrect');
+        }
+
+        if (id === "30") {
+            console.log("correct");
+        } else {
+            console.log('incorrect');
+        }
+
+
+        if (id != "30") {
+            console.log("correct");
+        } else {
+            console.log('incorrect');
+        }
+
+        if (id !== "30") {
+            console.log("correct");
+        } else {
+            console.log('incorrect');
+        }
+
+        const j = 40;
+        let k = 40;
+
+        if (j > k) {
+            console.log("Yes, J is greater than k");
+
+        } else if (j == k) {
+            console.log("j is equal to k");
+        } else {
+            console.log("j is less than k");
+        }
+
+        // switch statement 
+
+        // switch(condition){
+        //     case:
+        //     code to be execute;
+        //     break;
+        // }
+
+
+        const color = "white";
+
+        switch (color) {
+            case "white":
+                console.log("My fav color is not white");
+                break;
+
+            case "black":
+                console.log("my fav color is not black");
+                break;
+
+            case "red":
+                console.log("i hate red color");
+                break;
+
+            default:
+                console.log("Try again");
+                break;
+
+
+        }
+
+
+        const daycount = new Date().getDay()
+        let today;
+
+        switch (daycount) {
+            case 0:
+                today = "Sunday";
+                break;
+            case 1:
+                today = "Monday";
+                break;
+            case 2:
+                today = "Tuesday";
+                break;
+            case 3:
+                today = "Wensday";
+                break;
+            case 4:
+                today = "Thuday";
+                break;
+            case 5:
+                today = "Fri";
+                break;
+            default:
+                today = "SaT"
+
+        }
+
+        document.write(today);
+
+        let p = 10;
+        let q = 50;
+
+        // p = q;
+        // console.log(q);
+
+        // p += q;
+        // console.log(p);
+
+        // p /= q;
+        // console.log(p)
+
+        // q *= p;
+        // console.log(q);
+
+        q %= p;
+        console.log(q);
+
+        // switch ဆိုတာက ဘောင်ကလေးနဲ့ ဖြစ်နေတာနဲ့ စစ်တယ္ 
+
+        const username = prompt("Enter Username");
+        const password = prompt("Enter Password");
+
+        //console.log(username,password);
+
+        console.log(typeof username);
+        console.log(typeof password);
+
+        if (username === "aung aung" && username === "123456") {
+            console.log("Welcome");
+        } else {
+            console.log("Try Agaim");
+        }
+
+
+        // if (username === "aung aung" || username === "123456") {
+        //     console.log("Welcome");
+        // } else {
+        //     console.log("Try Agaim");
+        // }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+<!-- Assiginment operator
+
+=
++=
+-=
+*=
+/=
+
+comparison Operators (9)
+== equal to
+=== equal to
+!= not equal
+!==not equal
+>greater than
+>less than
+>= greater than or equal
+<= less than or equal ? Statement 
+
+
+logical 
+and &&
+ not ! 
+ or || -->
