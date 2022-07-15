@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show and Hide</title>
+        <!-- bs css1 js1  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <style>
+            .row{
+                height: 150px;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+      <div class="container">
+        <h1>jQuery Show and Hide Method</h1>
+
+
+        <div class="row">
+         <div id="div1" class="col-md-3 bg-primary text-white">Div1</div>
+         <div id="div2" class="col-md-3 bg-success text-white">Div2</div>
+         <div id="div3" class="col-md-3 bg-warning text-white">Div3</div>
+
+
+
+        </div>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eveniet nobis consectetur cum vero tenetur incidunt laborum unde rem, quam ex placeat vitae sunt magnam eaque expedita similique tempore maxime!</p>
+      </div>
+
+
+
+
+
+
+
+
+        <!-- bs css1 js1  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <!-- jq js1  -->
+        <script src="./JQ/jquery-3.6.0.min.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+
+
+                // $('#div1').hide();
+                // $('#div1').show();
+
+                
+                // $('#div1').hide(2000);
+                // $('#div1').show(3000);
+
+                // $('#div3').slideUp(2000);
+                // $('#div3').slideUp(3000);
+
+                // $('#div3'). slideDown(2000);
+                // $('#div3').slideDown(3000);
+
+
+
+                // $("p").hide();
+                // $("p").slideDown();
+
+
+                // animate (obj,speed )
+                $("#div3").animate({
+                    // "margin-left":"200px"              
+                    marginLeft:"300px"
+                    // "marginLeft":"300px"
+
+                
+                },3000);
+
+
+
+
+                $("#div3").animate({
+                    width:0,
+                    height:0,
+                    opacity:0,        
+                    marginLeft:"300px",
+                    marginTop:"30px"
+
+                
+                },3000);
+
+
+           
+
+
+                // call back function 
+                $('#div1').fadeTo(1000,0,function(){
+                  $('#div2').fadeTo(100,0,function(){
+                    $('#div3').fadeTo(3000,0);
+                  })
+                    
+                   
+                });
+
+
+
+
+            });
+        </script>
+    </body>
+</html>
