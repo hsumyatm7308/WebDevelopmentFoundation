@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>Form Elements</title>
+</head>
+
+<body>
+    <h3>Form Elements</h3>
+    <fieldset>
+        <legend>This is From me</legend>
+
+        <form action="" method="" enctype="multipart/form-data">
+            <!-- actionက backendအတွက် methodဆိုတာက ဘက်အမ်းကလူတွေ ဘာနည်းနဲ့ထည့်မှာလဲဆိုတာပေါ်တယ် -->
+            <!-- enctypeဆိုတာက ဖိုင်တွေအတွက် --- ဒေတာဘေ့နဲ့ နောက်တစ်ခုထဲ (လမ်းကြောင်းနှစ်ကြောင်းသွားတယ်) -->
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" class="" autofocus placeholder="Enter your First Name"
+                minlength="3" maxlength="6">
+            <br> <br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" class="" placeholder="Enter your First Name">
+            <br> <br>>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" class="" />
+            <br> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="" autocomplete="off" placeholder="Enter your First Name"
+                required>
+            <br> <br>>
+            <br> <br>
+            <label>Password</label>
+            <input type="password" name="password" id="password" class="" autocomplete="off"
+                placeholder="Enter your First Name">
+            <br> <br>>
+
+            <br> <br>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="gm" class="" checked><label for="gm">male
+            </label>
+            <input type="radio" name="gender" id="fm" class=""><label for="fm">female</label>
+            <input type="radio" name="gender" id="o" class=""><label for="o ">other</label>
+
+
+            <!-- formထဲမှာ label/input/ -->
+            <!-- textဆိုတာ စာသားအကုန်ရေးလို့ရတယ် -->
+            <!-- jsက idကို ခေါ်သုံးတယ် -->
+            <!-- nameက backendအတွက် -->
+            <!-- classဆိုတာက cssက ခေါ်သုံးဖို့ -->
+            <!-- id and class ကို နှစ်ခုလုံးခေါ်သုံးလို့ရတယ် မတူညီတာက idက unitဖြစ်ရမယ် classက unit ဖြစ်စရာမလိုဘူး -->
+            <!-- idက spaceတစ်ချက်တောင် ခြားလို့မရဘူး (value နှစ်ခုမရ) -->
+            <!-- classက value နှစ်ခုယူလို့ရတယ် -->
+            <!-- typeတွေက htmlက သတ်မှတ်ပေးထားတာ ကို ပေးရမယ် -->
+            <!-- for ဆိုတာက idနဲ့ တွဲသုံးနေတယ် -->
+
+            <!-- value မထည့်ရတဲ့ attributeတွေကို stand alone လို့ခေါ်တယ် -->
+            <!-- အများကြီးထဲကမှ ရွေးချယ်စေချင်ရင် checkboxကို သုံးမယ် -->
+            <!-- တစ်ခုတည်းရွေးစေချင်ရင် radio -->
+            <!-- ကိးဘုတ်ကနေဆို valueမလိုဘူး -->
+            <!-- ကလစ်ခေါက်ရတာဆို လိုတယ် -->
+
+            <label for="color">choose your fav color</label>
+            <input type="checkbox" name="color" id="color" class="" value="red"><label for="colorrd">Red</label>
+            <input type="checkbox" name="color" id="color" class="" value="black"><label for="colorbk">Black</label>
+            <input type="checkbox" name="color" id="color" class="" value="blue"><label for="colorbl">Blue</label>
+            <input type="checkbox" name="color" id="color" class="" value="green"><label for="colorgn">Green</label>
+
+
+
+            <!--data baseမှာ bit နည်းရင် မြန်တယ် ုဒါကြောင့် တစ်လုံးချင်းစီးသုံးတာပိုကောင်းတယ် -->
+            <br> <br>
+            <label for="country">Citizen</label>
+            <select name="country" id="country">
+                <option value="mm">Myanmar</option>
+                <option value="indo">Indonisa</option>
+                <option value="php" selected>Philipine</option>
+                <option value="kr">Korea</option>
+            </select>
+            <br>
+            <label for="country">Citizen</label>
+            <select name="country" id="country">
+                <option selected disabled>Choose your country</option>
+                <option value="mm">Myanmar</option>
+                <option value="indo">Indonisa</option>
+                <option value="php">Philipine</option>
+                <option value="kr">Korea</option>
+            </select>
+
+            <!-- disable ဆိုတာက boxတွေနဲ့လည်း တွဲသုံးလို့ရတယ် -->
+            <!-- stan alone attribute ---- autofocus (ဖွင့်လိုက်တာနဲ့ ကာဆာကျနေတာ)
+        and checked (ဖွင့်လိုက်တာနဲ့ ရွေးချယ်ပြိးကြောင်းပြတာ)
+         and selected (ရွေးချယ်ပြီးကြောင်းပြတာ)
+         and disable (မှိန်သွားတယ်)
+        readonly  (မှိန်မသွားဘူး ဖတ်လို့ရတယ်)-->
+            <br>
+            <br>
+
+            <label for="role">Role</label>
+            <select name="role" id="role" multiple>
+                <option value="1">Mananger</option>
+                <option value="2">Editor</option>
+                <option value="3">Web Developer</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB" class="">
+            <br>
+            <br>
+            <label for="Time">Time</label>
+            <input type="time" name="bookingtime" id="Time" class="">
+
+            <br>
+            <label for="apt">Apment</label>
+            <input type="datetime-local" name="apt" id="apt" class="">
+            <br>
+            <label for="vol">volume</label>
+            <input type="range" name="vol" id="vol" value="0" min="0" max="100" step="20">
+            <br>
+            <label> Bio</label>
+            <textarea name="bio" id="bio" class="" rows="10" placeholder="Write something"></textarea>
+            <br>
+            <label for="nrc">NRC</label>
+            <input type="file" name="nrc" id="nrc" class="" multiple>
+            <!-- emaliေတြ attachတြဲတဲ့အခါfileကိုသုံး -->
+            <br>
+            <input type="hidden" name="rolied" id="rolied" class="">
+            <br>
+            <input type="reset" name="reset" id="reset" value="cancel">
+            <input type="submit" name="register" id="register" value="submit">
+            <input type="submit" name="login" id="login" value="login">
+
+            <br>
+
+        </form>
+        <!-- min and maxက number -->
+        <!-- minlength and maxlength က strum -->
+    </fieldset>
+</body>
+
+</html>
