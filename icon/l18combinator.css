@@ -1,0 +1,39 @@
+/*Tag To Tag*/
+
+/*div span{
+	color: red;
+}*/
+
+/*Multi Tags to Tag*/
+
+/*div span p{
+	color: red;
+}*/
+
+/*Tag to Class*/
+
+/*div .address{
+	color: red;
+}*/
+
+/*Multi Tags to Class*/
+/*div span .address{
+	color: red;
+}*/
+
+/*Multi Tags to Same Class*/
+/*div span small.name{
+	color:red;
+}*/
+
+/*Class to Class*/
+
+/*.money .currency{
+	color: red;
+}
+*/
+
+/*MultiClass to Class*/
+.bank .money .currency{
+	color: red;
+}
