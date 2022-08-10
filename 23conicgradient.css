@@ -1,0 +1,134 @@
+.containerone .circle{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    background: conic-gradient(
+        red,
+        yellow,
+        green
+    );
+}
+    .containerone .circle2{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+        background: conic-gradient(
+            red,
+            yellow,
+            green,
+            blue,
+            black
+
+        );
+    }
+
+    .containerone .circle3{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+        background: conic-gradient(
+            red,
+            yellow,
+            green,
+            beige,
+            violet,
+            purple,
+            pink
+
+        );
+    }
+
+    .containerone .circle4{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+        background: conic-gradient(
+            violet 40%,
+            purple 0% 60%, /* 0 persent is for stopping violet*/
+            pink 0%
+
+        );
+    }
+
+    .containertwo{
+        width: 600px;
+        height: 300px;
+        background-color: blueviolet;
+        display: flex;
+
+        justify-content: center ; /*horizintal center = display flex must be!*/
+        align-items: center ; /* vertical center*/
+
+        position: relative;
+    }
+
+.containertwo .c1{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    border-radius: 50%;
+    /* possition ka ခြံပြင်ထွက်တာ  */
+    position: absolute;
+    /* right: 0; */
+    z-index: 1;  /*it reaches on upper layer*/
+}
+
+.containertwo .c2{
+    width: 320px;
+    height: 320px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+
+    position: absolute; 
+}
+
+.pointercontainer{
+    width: 20px;
+    height: 200px;
+    /* background-color:cornflowerblue; */
+
+    position: absolute;
+    top: -50px;
+    z-index: 3;
+
+    animation-name: myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;  (/*လည်တဲ့အရေအတွက်*/)
+    animation-timing-function: linear;
+
+    transform-origin:bottom;   (/*အောက်ကနေ လည်ခိုင်းတာ*/)
+
+  
+    
+    
+}
+
+.pointer{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+
+    position: absolute;
+
+
+    display: block;
+
+}
+
+@keyframes myanimation{
+
+    from{
+           transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+

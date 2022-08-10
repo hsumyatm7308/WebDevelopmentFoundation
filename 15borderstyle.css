@@ -1,0 +1,91 @@
+.bdstyle1{
+    border-style: solid;
+}
+
+.bdstyle2{
+    border-style: double;
+}
+
+.bdstyle3{
+    border-style: dotted;
+}
+
+.bdstyle4{
+    border-style: inset;
+}
+
+.bdstyle5{
+    border-style: dashed;
+}
+
+.bdstyle6{
+    border-style: outset;
+}
+
+.boderdesign{
+    width:300px ;
+    height: 300px;
+    /* background-color: cadetblue; */
+    background: chocolate;
+    /* border-radius: 50%; */
+/* border-radius: 100px; */
+    /* leftup rightup rihtdwon leftdown */
+ border-radius: 300px 40px 20px 10px; 
+           /* ssc = stoke  style color */
+border: 5px solid cadetblue;
+}
+
+
+ul{
+     list-style-type:square;
+     /* list-style-type: none; */
+     /* list-style-type: circle;  */
+}
+
+li{
+    list-style-type: decimal-leading-zero;
+    border: 2px;
+    border-style: dotted;
+    border-color: darkcyan;
+/* OR SSC  */
+ list-style-position: inside;
+ /* list-style-position: outside; */
+}
+
+.inputdesign{
+    border-radius: 10px;
+}
+
+/* attribute slector */
+input[type="text"] {
+    background-color: blanchedalmond;
+    width: 100px;
+    border: coral;
+    color: darkcyan;
+}
+
+input[type="password"]{
+    background-color: darkgrey;
+    width: 200px;
+}
+
+/* background possition */
+body{
+    background-image: url('./bp.jpg ');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* page ရဲ့ အလယ် */
+ /* background-position: right; */
+ /* background-size: 500px; */
+ background-position: top; 
+ /* background အလယ် ထိပ်   */
+ /* background-attachment: scroll; */
+ /* background-attachment: fixed; */
+
+background-position: right top;
+
+ /*  can't = background-color: url(-----) ; */
+
+ /* background-repeat: repeat-x; */
+ background-repeat: repeat-y;
+}

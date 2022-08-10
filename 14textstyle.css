@@ -1,0 +1,30 @@
+.textaling{
+    text-align: left;
+    
+
+}
+
+.textdecoration{
+    /* text-decoration: line-through; */
+ text-decoration: underline;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.textline{
+    /* letter-spacing: 1px; */
+    line-height: 10px;
+    /* px or number or percent is okay */
+}
+
+/* h v b c  */
+
+.textshaw{
+ text-shadow: 0px 0px 10px brown;
+
+ /* - is left and + is right  */
+}
+
+

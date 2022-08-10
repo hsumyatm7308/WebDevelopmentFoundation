@@ -1,0 +1,36 @@
+/* pseudo class  */
+
+ /* .div1{
+    width: 300px;
+    height: 100px;
+    background-color: blanchedalmond;
+} */
+
+/* .div1:first-child{
+    background-color: blueviolet;
+    color:#fff;
+} */
+
+/* .div2:first-of-type{
+    background-color: blueviolet;
+    color:#fff;
+}  */
+
+/* div:last-of-type{
+    background-color: blueviolet;
+    color:#fff;
+ }  */
+
+
+ /* div:nth-of-type(1){
+    background-color: blueviolet;
+    color:#fff;
+ } */
+
+ /* div:nth-child(even){
+    background-color: blueviolet;
+    color:#fff;
+ 
+ }  */
+
+ /* last-child is the latest type and same type  */

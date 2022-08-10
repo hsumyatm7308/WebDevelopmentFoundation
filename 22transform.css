@@ -1,0 +1,79 @@
+:root{
+    --rc:red;
+    --gn:green;
+    --bl:blue;
+
+}
+
+
+.div1{
+    width: 100px;
+    height: 80px;
+background-color: var(--rc);
+
+/* transform: rotate(20deg); */
+transform: rotate(40deg);
+}
+
+.div2{
+    width: 100px;
+    height: 80px;
+    background-color: var(--gn);
+ /* scale is big from center and 1 is defult */
+    transform: scale(1);
+}
+
+.div3{
+    width: 200px;
+    height: 80px;
+    background-color: var(--bl);
+/* this is pressing  */
+    transform: skew(20deg);
+}
+
+.div4{
+    width: 100px;
+    height: 80px;
+    background-color: var(--rc);
+
+
+ /* translate is place changing  */
+
+    /* transform: translate(50%); */
+    /* transform: translate(100px);  */
+    transform: translate(20%);
+
+}
+
+.div5{
+    width: 100px;
+    height: 80px;
+    background-color: var(--gn);
+
+    transform: rotateX(60deg); 
+
+}
+
+.div6{
+    width: 100px;
+    height: 80px;
+    background-color: var(--bl);
+
+    
+    transform: rotateY(40deg);
+}
+
+
+.country{
+    font-size: 15px;
+/* 
+Vendor Prifix Properties
+-webkit-appearance: none ;   operata( -o-)  chrome safri  internet explorer (-ms-)    mozilar firefox (-moz-)  */
+    appearance: none;
+    padding: 10px 25px 10px 10px;
+    background-image: url(../img/arrow.jpg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}

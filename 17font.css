@@ -1,0 +1,97 @@
+/* local font  */
+/* i local machine integrat */
+/* ii project folder integrat */
+
+
+
+
+
+/* globle font integrate */
+/* font familiy; dancint script */
+/* snas-serif က လိုင်းကျသွားလည်း fontပေါ်နေဖို့ */
+
+/* h1{ */
+    /* font-family: 'Dancing Script', cursive; */
+/* } */
+*{
+    cursor: pointer;
+}
+/* * is universal select */
+
+p{
+    font-family: 'Akaya Kanadaka', cursive ;
+}
+    /* ; design change ယူသုံးဖို့အဆါက် */
+   
+
+/* at-rules */
+@font-face {
+    font-family:'Akaya Kanadaka'; 
+    /* shortcut name */
+    src:local(AkayaKanadaka-Regular),url('../libs/font/akayakanadaka/AkayaKanadaka-Regular.ttf') format(woff) }
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../libs/font/Roboto/Roboto-Black.ttf') format('woff');
+}
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* 100-900 */  
+    font-weight: bold;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+
+  text-indent: 50px;
+}
+
+.clickme:visited {
+    color:green;
+}
+
+/* hover is pointer */
+.clickme:hover {
+    color: blue;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.menutext{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    /* padding: 20px; */
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+/* transition: all 1s; */
+/* (slowly fill) */
+transition: background-color 2s, color 5s;
+/* ta khu nae ta khu char chin yin comma (,) nae charr */
+}
+
+.menutext:hover {
+    background-color: chartreuse;
+    color:brown;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+img:hover {
+ width: 100px;
+ height: 100px;
+}

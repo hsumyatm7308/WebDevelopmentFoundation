@@ -1,0 +1,20 @@
+.firstdiv{
+    width: 200px;
+    height: 200px;
+    /* background-color: darkgrey; */
+    background-image:url('./bp.jpg'), repeating-linear-gradient(red,blue);
+    /* background:repeating-linear-gradient(blue,black,beige) */
+/* background:radial-gradient(blue white black); */
+}
+
+/* background color  only solid color  */
+/* background  solid and image and gradient */
+/* image  image and grandient  not solid */
+
+
+ .f{
+     width: 500px;
+     height: 800px;
+     /* background-color: black; */
+     background: radial-gradient(grey blue yellow red);
+ }

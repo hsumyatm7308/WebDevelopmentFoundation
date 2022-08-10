@@ -1,0 +1,95 @@
+/* Tag to Tag  */
+/* div {
+    color: blue;
+} */
+
+/* { } nae cap nay tae kaung ka a lote lote tal  */
+/* mulit tag to class */
+/* div span{
+    color:lightcoral; } */
+
+
+/* Mulit Tag to Tag  */
+/* div span p{
+    color: lightseagreen;
+} */
+
+/* tag to class */
+ /* div .address{ 
+    color: limegreen;
+}  */
+
+/* Mulit to class */
+/* div span .address{
+    color: mediumpurple; } */
+  /*not done yet*/
+
+/* multi to same class  */
+/* div span small.name{
+color: midnightblue;
+} */
+
+/* class to class  */
+/* .money .currency{
+    color: navy;
+} */
+
+/* multi to class  */
+ /* .bank .money .currency{ 
+    color: olive;    
+}  */
+
+
+/* class to tag  */
+/* .container p{
+color: red;
+} */
+
+/* class to multi tag  */
+ /* .container b span { 
+    color: orangered;
+}  */
+
+/* same class  */
+  /* .mobile{
+    color: orchid;
+}  */
+
+/* .mobile.jpn {
+    color: palegreen;
+} */
+
+/* .vehical .mobile.jpn
+{
+    color: blue;
+} */
+
+/* class to tag  */
+/* .div1 p, .div1 b{
+    color: red;
+
+}  */
+
+ /* .div1 b{
+    color: red;
+} */ 
+
+
+
+/* child selector(>)  */
+/* .div2>p{
+    color: red;
+} */
+
+/* sibiling selectors (2types) */
+/* (i) general sibling selector */
+/* .div4 ~ p{
+    color: blue;
+} */
+
+/* (ii) adjecent sibling selector */
+.div7 +p{
+    color: red;
+}
+
+/* တစ်အိမ်ကျော် ရင်မရ / ကပ်နေမှရ */

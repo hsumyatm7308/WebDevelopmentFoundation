@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+
+
+:root{
+    --wcc:#fff;
+    --gyc:#777;
+    --dbc:#1d68e0;
+}
+
+*{
+
+    box-sizing: border-box
+}
+
+body{
+    /* width: 1200px; */
+    
+    font-family: 'Stick', sans-serif;
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    
+
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.container{
+   
+
+    width: 400px;
+    background-color: var(--gyc);
+    box-shadow: rgb(92, 90, 90);
+
+    
+
+    cursor: pointer;
+}
+
+
+.container h2{
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.container .form{
+    padding: 30px 40px;
+}
+
+.form-group label{
+    display: block;
+    color: var(--wcc);
+    margin-bottom: 5px;
+}
+
+.form-group .form-control{
+    width: 100%;
+    padding: 10px;
+    
+     /* input box htal ka letter ko change  */
+     font-family: inherit;
+}
+
+.form-group .form-control::placeholder{
+    color: lightblue;
+}
+
+.form .btn{
+    width: 100%;
+    background-color: var(--dbc);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: none;
+    cursor: pointer;
+
+    transition: all 2s;
+}
+
+.form .btn:hover{
+    background-color: orange;
+
+}
+
+.form .btn:active{
+    background-color:palegoldenrod;
+    
+}

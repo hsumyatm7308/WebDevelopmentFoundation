@@ -1,0 +1,24 @@
+
+
+/* .paragdraph::first-line{
+color: red;
+} */
+
+/* .paragdraph::first-letter{
+    color: red;
+    } */
+
+    /* .paragdraph::selection{
+        color: red;
+        background-color: rosybrown;
+        } */
+
+        .paragdraph::before{
+            content: "Hello  ";
+            color: blanchedalmond;
+        }
+
+        .paragdraph::after{
+            content: "bye bye";
+            color: blueviolet;
+        }
